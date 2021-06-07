@@ -1,23 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import "./HeroCard.scss";
-import { init } from "ityped";
-const HeroCard = () => {
-  const textRef = useRef();
-  useEffect(() => {
-    init(textRef.current, {
-      showCursor: false,
-      backDelay: 1500,
-      backSpeed: 40,
 
-      strings: ["Developer", "Mentor", "Entrepreneur"],
-    });
-  }, []);
+const HeroCard = () => {
   return (
     <div className="card">
       <div className="card__image" />
       <div className="card__info">
         <h2 className="card__name">Amar Mohamud</h2>
-        <h2 ref={textRef} className="card__title"></h2>
+        <h2 className="card__title">Software Engineer</h2>
       </div>
     </div>
   );
