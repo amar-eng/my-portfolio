@@ -5,6 +5,7 @@
 .heroContent {
   // Mobile View
   text-align: center;
+  background-color: $offwhite;
   @include normal;
   &__title {
     @include bold;
@@ -30,7 +31,7 @@
   @include desktop {
     // position: relative;
     // right: 7rem;
-    margin-left: 15rem;
+    padding-left: 9rem;
     // padding-right: 2rem;
     &__title {
       @include bold;
@@ -44,5 +45,8 @@
         color: $darkbeige;
       }
     }
+  }
+  @include ultra {
+    padding-left: 14rem;
   }
 }

@@ -8,6 +8,7 @@ const HeroCard = () => {
       showCursor: false,
       backDelay: 1500,
       backSpeed: 40,
+
       strings: ["Developer", "Mentor", "Entrepreneur"],
     });
   }, []);

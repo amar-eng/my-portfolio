@@ -22,7 +22,7 @@
     background-color: $offwhite;
     &__container {
       background-color: rgb(198, 177, 159);
-      width: 50%;
+      width: 37.3%;
       height: inherit;
     }
   }
@@ -30,7 +30,7 @@
   @include ultra {
     &__container {
       // background-color: red;
-      width: 50%;
+      width: 45%;
     }
   }
 }
