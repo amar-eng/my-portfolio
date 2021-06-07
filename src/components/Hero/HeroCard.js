@@ -14,8 +14,10 @@ const HeroCard = () => {
   return (
     <div className="card">
       <div className="card__image" />
-      <h2 className="card__name">Amar Mohamud</h2>
-      <h2 ref={textRef} className="card__title"></h2>
+      <div className="card__info">
+        <h2 className="card__name">Amar Mohamud</h2>
+        <h2 ref={textRef} className="card__title"></h2>
+      </div>
     </div>
   );
 };

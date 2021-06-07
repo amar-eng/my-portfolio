@@ -13,7 +13,7 @@
 }
 
 @mixin ultra {
-  @media (min-width: $ultra) {
+  @media (min-width: $ultra-breakpoint) {
     @content;
   }
 }

@@ -3,24 +3,20 @@
 @import "../partials/variables";
 
 .card {
-  position: relative;
-  right: 11%;
-  background-color: $beige;
-  opacity: 100%;
-  width: 39%;
-  // @include ultra {
-  //   width: 31%;
-  // }
-  height: 60vh;
+  // Mobile View
+
   box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
     -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
-
+  background-color: $beige;
+  position: absolute;
+  bottom: 27%;
+  left: 12%;
+  height: 60vh;
+  width: 80%;
   &__image {
     width: 69%;
     height: 52%;
-    @include desktop {
-      margin: 1rem 2.9rem;
-    }
+    margin: 1rem 3rem;
 
     border-radius: 50%; /*don't forget prefixes*/
     background-image: url("../../assets/pics/me.jpg");
@@ -31,15 +27,66 @@
   &__name {
     text-align: center;
     text-transform: uppercase;
+    padding: 0 0.4rem;
     @include bold;
-    font-size: 34px;
+    font-size: 30px;
     color: $black;
   }
   &__title {
     text-align: center;
     @include light;
     text-transform: uppercase;
-    font-size: 27px;
-    color: $black;
+    font-size: 25px;
+    color: $darkblue;
+  }
+
+  // Tablet view
+
+  @include tablet {
+    position: absolute;
+    bottom: 32%;
+    // left: 25%;
+    height: 55vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__image {
+      width: 35%;
+      height: 45%;
+      margin: 1rem 3rem;
+    }
+  }
+
+  // Desktop view
+  @include desktop {
+    bottom: 10%;
+    opacity: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    &__image {
+      width: 65%;
+      height: 52%;
+      margin: 1rem 2.9rem;
+    }
+    &__name {
+      text-align: center;
+      text-transform: uppercase;
+      @include bold;
+      font-size: 34px;
+      color: $black;
+    }
+    &__title {
+      text-align: center;
+      @include light;
+      text-transform: uppercase;
+      font-size: 27px;
+      color: $black;
+    }
+  }
+  @include ultra {
+    width: 25%;
+    left: 22%;
   }
 }

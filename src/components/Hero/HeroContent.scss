@@ -3,20 +3,46 @@
 @import "../partials/variables";
 
 .heroContent {
+  // Mobile View
   text-align: center;
-  position: relative;
-  right: 7rem;
   @include normal;
   &__title {
     @include bold;
-    font-size: 60px;
+    font-size: 40px;
     text-transform: uppercase;
     color: $black;
   }
   &__text {
-    font-size: 20px;
+    font-size: 18px;
+    padding: 0 0.5rem;
     span {
       color: $darkbeige;
+    }
+  }
+
+  // Tablet View
+  @include tablet {
+    &__text {
+      padding: 0 3rem;
+    }
+  }
+  // Desktop View
+  @include desktop {
+    // position: relative;
+    // right: 7rem;
+    margin-left: 15rem;
+    // padding-right: 2rem;
+    &__title {
+      @include bold;
+      font-size: 60px;
+      text-transform: uppercase;
+      color: $black;
+    }
+    &__text {
+      font-size: 20px;
+      span {
+        color: $darkbeige;
+      }
     }
   }
 }
