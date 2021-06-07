@@ -1,0 +1,22 @@
+@import "../partials/fonts";
+@import "../partials/mixins";
+@import "../partials/variables";
+
+.heroContent {
+  text-align: center;
+  position: relative;
+  right: 7rem;
+  @include normal;
+  &__title {
+    @include bold;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: $black;
+  }
+  &__text {
+    font-size: 20px;
+    span {
+      color: $darkbeige;
+    }
+  }
+}

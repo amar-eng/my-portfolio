@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Raleway";
+  font-weight: normal;
+  src: url(../../assets/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+@mixin bold {
+  font-family: "Raleway";
+  font-weight: 500;
+}
+@mixin normal {
+  font-family: "Raleway";
+  font-weight: 300;
+}
+@mixin light {
+  font-family: "Raleway";
+  font-weight: 100;
+}

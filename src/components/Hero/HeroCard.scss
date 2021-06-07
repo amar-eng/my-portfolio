@@ -1,0 +1,45 @@
+@import "../partials/fonts";
+@import "../partials/mixins";
+@import "../partials/variables";
+
+.card {
+  position: relative;
+  right: 11%;
+  background-color: $beige;
+  opacity: 100%;
+  width: 39%;
+  // @include ultra {
+  //   width: 31%;
+  // }
+  height: 60vh;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+
+  &__image {
+    width: 69%;
+    height: 52%;
+    @include desktop {
+      margin: 1rem 2.9rem;
+    }
+
+    border-radius: 50%; /*don't forget prefixes*/
+    background-image: url("../../assets/pics/me.jpg");
+    background-position: center center;
+
+    background-size: cover;
+  }
+  &__name {
+    text-align: center;
+    text-transform: uppercase;
+    @include bold;
+    font-size: 34px;
+    color: $black;
+  }
+  &__title {
+    text-align: center;
+    @include light;
+    text-transform: uppercase;
+    font-size: 27px;
+    color: $black;
+  }
+}

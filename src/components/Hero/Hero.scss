@@ -1,0 +1,16 @@
+@import "../partials/fonts";
+@import "../partials/mixins";
+@import "../partials/variables";
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $offwhite;
+  &__container {
+    background-color: rgb(198, 177, 159);
+    width: 53.3%;
+    height: inherit;
+  }
+}
