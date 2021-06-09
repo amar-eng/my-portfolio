@@ -1,0 +1,90 @@
+@import "../partials/fonts";
+@import "../partials/mixins";
+@import "../partials/variables";
+
+.skills {
+  padding: 1rem 0;
+  box-sizing: border-box;
+  background-color: $offwhite;
+  &__title {
+    text-align: center;
+    font-size: 34px;
+    @include bold;
+    text-transform: uppercase;
+    color: $darkbeige;
+    padding: 1rem;
+  }
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    // margin: 0 5rem;
+  }
+  &__singleImage {
+    margin: 0 1rem 1rem 0rem;
+    flex-basis: 40%;
+    width: auto;
+    height: 100px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain; /* Resize the background image to cover the entire container */
+    //     filter: grayscale(100%);
+    //     cursor: pointer;
+    //     &:hover {
+    //       filter: grayscale(0%);
+    //     }
+  }
+}
+.one {
+  background-image: url("../../assets/icons/html.png");
+}
+.two {
+  background-image: url("../../assets/icons/css.png");
+}
+.three {
+  background-image: url("../../assets/icons/js.png");
+}
+.four {
+  background-image: url("../../assets/icons/sass.png");
+}
+.five {
+  background-image: url("../../assets/icons/react.png");
+}
+.six {
+  background-image: url("../../assets/icons/node.png");
+}
+.seven {
+  background-image: url("../../assets/icons/git.png");
+}
+.eight {
+  background-image: url("../../assets/icons/mongo.png");
+}
+.nine {
+  background-image: url("../../assets/icons/aws.png");
+}
+.ten {
+  background-image: url("../../assets/icons/sql.png");
+}
+.eleven {
+  background-image: url("../../assets/icons/firebase.png");
+}
+.twelve {
+  background-image: url("../../assets/icons/sql.png");
+}
+
+@include tablet {
+  .skills {
+    &__singleImage {
+      flex-basis: 25%;
+    }
+  }
+}
+@include desktop {
+  .skills {
+    &__singleImage {
+      flex-basis: 20%;
+    }
+  }
+}
