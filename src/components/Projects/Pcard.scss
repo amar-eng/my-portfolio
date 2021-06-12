@@ -1,0 +1,33 @@
+@import "../partials/fonts";
+@import "../partials/mixins";
+@import "../partials/variables";
+
+.pCard {
+  @include normal;
+  text-align: center;
+  padding: 1rem;
+  font-size: 18px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  background-color: $darkblue;
+  color: $darkbeige;
+  width: 30%;
+  height: 40vh;
+  &__icons {
+    width: 10%;
+    height: 10%;
+    margin: 3rem;
+  }
+}
+.cards {
+  margin: 1rem;
+  //   display: inline-flex;
+  //   flex-basis: 50%;
+  //   align-items: center;
+  //   justify-content: space-around;
+  //   flex-wrap: wrap;
+  //   flex-direction: column-reverse;
+  //   width: 50%;
+  //   height: 40vh;
+  //   flex-basis: 50%;
+}

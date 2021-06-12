@@ -1,16 +1,4 @@
 import React from "react";
-import css from "../../assets/icons/css.png";
-import aws from "../../assets/icons/aws.png";
-import firebase from "../../assets/icons/firebase.png";
-import git from "../../assets/icons/git.png";
-import html from "../../assets/icons/html.png";
-import js from "../../assets/icons/js.png";
-import matlab from "../../assets/icons/matlab.png";
-import mongo from "../../assets/icons/mongo.png";
-import node from "../../assets/icons/node.png";
-import react from "../../assets/icons/react.png";
-import sass from "../../assets/icons/sass.png";
-import sql from "../../assets/icons/sql.png";
 import "./Skills.scss";
 const Skills = () => {
   return (

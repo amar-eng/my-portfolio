@@ -7,9 +7,9 @@ const HeroContent = () => {
   const textRef = useRef();
   useEffect(() => {
     init(textRef.current, {
-      showCursor: false,
-      backDelay: 900,
-      backSpeed: 60,
+      showCursor: true,
+      backDelay: 1700,
+      backSpeed: 80,
 
       strings: [
         "Developer",
@@ -25,7 +25,7 @@ const HeroContent = () => {
       <Button name="Resume" color="rgb(220, 206, 194)" textColor="#05203b" />
       <Button name="Projects" color="#05203b" textColor="rgb(220, 206, 194)" />
       <p className="heroContent__text">
-        Hi, I am Amar, a <span ref={textRef}></span> based in Toronto.
+        I'm Amar, a <span ref={textRef}></span> based in Toronto.
       </p>
       <p className="heroContent__text">
         I enjoy creating things & re-inventing the wheel whether it be

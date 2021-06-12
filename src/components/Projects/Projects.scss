@@ -1,11 +1,17 @@
+@import "../partials/fonts";
+@import "../partials/mixins";
+@import "../partials/variables";
+
 .projects {
   margin-bottom: 50rem;
-  &__pic {
-    display: none;
-  }
-  span:hover + img {
-    display: block;
-    width: 10rem;
-    height: 10rem;
+  text-align: center;
+
+  background: $offwhite;
+  //   margin-top: 0;
+  &__title {
+    margin: 0;
+    @include light;
+    text-transform: uppercase;
+    color: $darkbeige;
   }
 }
