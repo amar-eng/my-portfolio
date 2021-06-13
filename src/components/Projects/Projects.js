@@ -16,6 +16,7 @@ const Projects = () => {
             desc={item.description}
             website={item.website}
             code={item.code}
+            pic={item.image}
           />
         );
       })}

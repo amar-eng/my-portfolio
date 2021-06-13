@@ -1,29 +1,25 @@
-import React from "react";
-import { Link, Route } from "react-router-dom";
-import { AiFillGithub } from "react-icons/ai";
-import projectList from "./projectList";
-import Git from "../../assets/icons/git.png";
-import Chrome from "../../assets/icons/chrome.png";
+import React, { useState } from "react";
+import { BsChevronDown } from "react-icons/bs";
 import "./Pcard.scss";
-const Pcard = ({ key, title, desc, website, code }) => {
+import Modal from "./Modal";
+const Pcard = ({ key, title, desc, website, code, pic }) => {
+  const [selected, setSelected] = useState(false);
   return (
     <div className="cards">
       <div className="pCard">
+        <img src={pic} alt={title} className="pCard__pic" />
         <div className="pCard__title">{title}</div>
-        <div className="pCard__desc">{desc}</div>
-        <div>
-          <img
-            src={Git}
-            onClick={() => window.open(`${code}`)}
-            className="pCard__icons git"
-          />
-          <img
-            src={Chrome}
-            onClick={() => window.open(`${website}`)}
-            className="pCard__icons git"
-          />
-        </div>
+        <BsChevronDown onClick={() => setSelected(true)} />
       </div>
+      {selected && (
+        <Modal
+          title={title}
+          desc={desc}
+          website={website}
+          code={code}
+          setSelected={setSelected}
+        />
+      )}
     </div>
   );
 };
