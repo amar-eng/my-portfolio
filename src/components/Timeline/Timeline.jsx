@@ -43,7 +43,8 @@ const Timeline = () => {
                   className={`timelineButton ${
                     isWorkIcon ? "workButton" : "schoolButton"
                   }`}
-                  href="/"
+                  onClick={() => window.open(`${element.link}`)}
+                  style={{ cursor: "pointer" }}
                 >
                   {element.buttonText}
                 </a>

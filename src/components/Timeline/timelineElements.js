@@ -16,6 +16,7 @@ let timelineElements = [
     description:
       "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic with the use of server-side scripting languages.",
     buttonText: "View Here",
+    link: "https://prontoshop.ca/",
     date: "June 2020 - September 2020",
     icon: "work",
   },

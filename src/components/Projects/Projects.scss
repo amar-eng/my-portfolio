@@ -3,15 +3,50 @@
 @import "../partials/variables";
 
 .projects {
-  margin-bottom: 50rem;
-  text-align: center;
-
   background: $offwhite;
-  //   margin-top: 0;
-  &__title {
-    margin: 0;
-    @include light;
-    text-transform: uppercase;
-    color: $darkbeige;
-  }
+  position: relative;
+  // height: 100vh;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects__title {
+  margin: 0;
+  padding-top: 2rem;
+  @include light;
+  text-transform: uppercase;
+  color: $darkbeige;
+  text-align: center;
+  background: $offwhite;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10rem;
+  font-size: 3rem;
+  color: $darkblue;
+  z-index: 10;
+  user-select: none;
+}
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 10rem;
+  font-size: 3rem;
+  color: $darkblue;
+  z-index: 10;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
 }

@@ -8,15 +8,15 @@ let projectList = [
     code: "https://prontoshop.ca/",
     image: require("../../assets/pics/pronto.png").default,
   },
-  {
-    id: 2,
-    title: "StudioGlam",
-    description:
-      "Because of COVID-19, a client asked me to convert their local retail store to an online business. I created this website using MERN stack applications. If you like shopping from small business owners, then don't go too far ",
-    website: "https://www.google.com/",
-    code: "https://github.com/amar-eng/StudioGlam-beta",
-    image: require("../../assets/pics/none.png").default,
-  },
+  // {
+  //   id: 2,
+  //   title: "StudioGlam",
+  //   description:
+  //     "Because of COVID-19, a client asked me to convert their local retail store to an online business. I created this website using MERN stack applications. If you like shopping from small business owners, then don't go too far ",
+  //   website: "https://www.google.com/",
+  //   code: "https://github.com/amar-eng/StudioGlam-beta",
+  //   image: require("../../assets/pics/none.png").default,
+  // },
   {
     id: 3,
     title: "Colognoiusseur",
