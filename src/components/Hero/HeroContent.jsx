@@ -50,7 +50,6 @@ const HeroContent = () => {
         Projects
       </button>
 
-      {/* <Button name="Projects" color="#05203b" textColor="rgb(220, 206, 194)" /> */}
       <p className="heroContent__text">
         I'm Amar, a <span ref={textRef}></span> based in Toronto.
       </p>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Projects.scss";
-import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import Pcard from "./Pcard";
 import projectList from "./projectList";
