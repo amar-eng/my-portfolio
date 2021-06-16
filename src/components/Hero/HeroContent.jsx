@@ -43,15 +43,16 @@ const HeroContent = () => {
       <button
         className="hero__btn"
         style={{
-          backgroundColor: "rgb(220, 206, 194)",
-          color: "#05203b",
+          backgroundColor: "#05203b",
+          color: "rgb(220, 206, 194)",
         }}
       >
         Projects
       </button>
 
       <p className="heroContent__text">
-        I'm Amar, a <span ref={textRef}></span> based in Toronto.
+        I'm Amar, a <span className="textspan" ref={textRef}></span> based in
+        Toronto.
       </p>
       <p className="heroContent__text">
         I enjoy creating things & re-inventing the wheel whether it be

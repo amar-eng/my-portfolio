@@ -16,13 +16,12 @@
   &__text {
     font-size: 18px;
     padding: 0 0.5rem;
-    span {
-      color: $darkbeige;
-      text-transform: uppercase;
-      font-size: 1.2em;
-    }
   }
-
+  .textspan {
+    color: $darkbeige;
+    text-transform: uppercase;
+    font-size: 1.2em;
+  }
   // Tablet View
   @include tablet {
     &__text {

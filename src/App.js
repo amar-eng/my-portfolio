@@ -3,7 +3,7 @@ import Hero from "./components/Hero/Hero";
 // import Home from "./components/Home/Home";
 // import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-// import Contact from "./components/Contact/Contact";
+import Contact from "./components/Contact/Contact";
 import Resume from "./components/Resume/Resume";
 // import Navbar from "./components/Navbar";
 // import Sidebar from "./components/Sidebar";
@@ -16,6 +16,7 @@ function App() {
       <Hero />
       <Resume />
       <Projects />
+      <Contact />
     </Router>
   );
 }

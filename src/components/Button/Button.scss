@@ -16,7 +16,8 @@
   font-size: 17px;
 
   &:hover {
-    font-size: 19px;
+    color: $darkblue !important;
+    background-color: $beige !important;
   }
   &:focus {
     outline: none;
