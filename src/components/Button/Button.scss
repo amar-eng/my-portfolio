@@ -23,3 +23,9 @@
     outline: none;
   }
 }
+
+.buttn {
+  @include tablet {
+    margin-left: 10rem;
+  }
+}

@@ -5,7 +5,7 @@
 .contact__header {
   margin: 0rem;
   padding: 3rem;
-  @include normal;
+  @include bold;
   text-transform: uppercase;
   font-size: 2rem;
   color: $darkbeige;
@@ -13,7 +13,7 @@
   //   background: $offwhite;
 }
 .contact-body {
-  background: $offwhite;
+  // background: $offwhite;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,22 +23,189 @@
   background-image: url("../../assets/pics/open.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  // padding-bottom: 10rem;
 }
 
+// .contact {
+//   display: flex;
+//   flex-direction: column;
+//   width: 80%;
+//   //   height: 50vh;
+//   border-radius: 15px;
+//   overflow: hidden;
+//   padding: 10px;
+//   //   background: $ice;
+//   backdrop-filter: blur(5px);
+//   border: 1.5px solid $offwhite;
+//   //   -webkit-box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.75);
+//   //   -moz-box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.75);
+//   //   box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.75);
+//   &__info {
+//     background: $darkblue;
+//     flex: 0 1 30%;
+//     border-radius: 15px;
+//     padding: 40px;
+//     color: $offwhite;
+//     display: flex;
+//     flex-direction: column;
+//     &-header {
+//       text-transform: uppercase;
+//       @include normal;
+//       font-size: 1.5rem;
+//       //   margin-top: 0;
+//       margin: 0 0 2rem 0;
+//     }
+//     &-content {
+//       font-size: 1rem;
+//       @include light;
+//       margin-bottom: 2rem;
+//     }
+//   }
+
+//   .span-content {
+//     font-size: 1rem;
+//     @include light;
+//   }
+
+//   .icon-text {
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-start;
+//     margin-bottom: 2rem;
+//   }
+
+//   .socials {
+//     display: flex;
+//     width: 50%;
+
+//     justify-content: space-evenly;
+//     .icon-circle {
+//       flex: 0 1 50px;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       height: 50px;
+//       border-radius: 50%;
+
+//       transition: 0.3s all ease-in-out;
+//       &:hover {
+//         background: $ice;
+//       }
+//     }
+//   }
+// }
+// form {
+//   padding: 40px;
+//   width: 100%;
+//   .col {
+//     display: flex;
+//     flex-direction: row;
+//     width: 100%;
+//     overflow: hidden;
+//     flex-wrap: wrap;
+//   }
+//   .form-group {
+//     display: flex;
+//     justify-content: flex-start;
+//     flex-direction: column;
+//     width: 40%;
+
+//     padding-right: 40px;
+//     label {
+//       font-size: 1rem;
+//       color: $darkblue;
+//       @include light;
+
+//       width: 100%;
+//     }
+//     input[type="text"],
+//     input[type="email"],
+//     input[type="tell"],
+//     textarea {
+//       background: rgba(255, 255, 255, 0.2);
+//       background: transparent;
+//       border: none;
+//       border-bottom: 2px solid $darkblue;
+//       padding: 10px;
+//       font-size: 1rem;
+//       cursor: pointer;
+//       @include light;
+//       transition: 0.5s all ease-in-out;
+//       margin-bottom: 2rem;
+//       &:focus {
+//         outline: none;
+//         border-bottom: 2px solid salmon;
+//       }
+//     }
+//   }
+//   .butns {
+//     width: 100%;
+//     @include light;
+//     .form__title {
+//       text-transform: uppercase;
+//     }
+
+//     input[type="radio"]:checked + label {
+//       color: salmon;
+//       @include bold;
+//       text-transform: uppercase;
+//     }
+//     .textArea {
+//       margin: 2rem 0;
+//     }
+//     .textArea__message {
+//       padding-bottom: 10rem;
+//     }
+//     .textAreas {
+//       width: 100%;
+//       background: rgba(255, 255, 255, 0.2);
+//       background: transparent;
+//       border: none;
+//       border-bottom: 2px solid $darkblue;
+//       padding: 15px 10px 0 10px;
+//       resize: none;
+//       font-size: 1rem;
+//       cursor: pointer;
+//       @include light;
+//       transition: 0.5s all ease-in-out;
+//       margin-bottom: 2rem;
+//       &:focus {
+//         outline: none;
+//         border-bottom: 2px solid salmon;
+//       }
+//     }
+//   }
+//   .radio {
+//     display: flex;
+//     justify-content: flex-start;
+//     padding-top: 1rem;
+//     &__content {
+//       margin-right: 2rem;
+//     }
+//     label {
+//       font-size: 1.1rem;
+//     }
+//   }
+// }
+
+// Views
+
 .contact {
+  // Mobile
+  height: 100vh;
   display: flex;
-  width: 80%;
-  //   height: 50vh;
   border-radius: 15px;
   overflow: hidden;
   padding: 10px;
-  //   background: $ice;
+  height: 78%; //--------------------------------------- height of the big card
   backdrop-filter: blur(5px);
   border: 1.5px solid $offwhite;
-  //   -webkit-box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.75);
-  //   -moz-box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.75);
-  //   box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.75);
+  flex-direction: column;
   &__info {
+    height: 25vh; //------------------------------ height of the contact info
     background: $darkblue;
     flex: 0 1 30%;
     border-radius: 15px;
@@ -49,145 +216,144 @@
     &-header {
       text-transform: uppercase;
       @include normal;
-      font-size: 1.5rem;
+      font-size: 1.2rem; // change this for tablet view
       //   margin-top: 0;
-      margin: 0 0 2rem 0;
+      margin: 0 0 1rem 0; // change this for tablet view
+    }
+    &:hover {
+      background: $darkbeige;
+      color: $darkblue;
     }
     &-content {
       font-size: 1rem;
       @include light;
+      margin-bottom: 1rem; // ----------------------change this for tablet view
+    }
+    .span-content {
+      font-size: 1rem;
+      @include light;
+    }
+
+    .icon-text {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
       margin-bottom: 2rem;
     }
-  }
 
-  .span-content {
-    font-size: 1rem;
-    @include light;
-  }
-
-  .icon-text {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 2rem;
-  }
-
-  .socials {
-    display: flex;
-    width: 50%;
-
-    justify-content: space-evenly;
-    .icon-circle {
-      flex: 0 1 50px;
+    .socials {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 50px;
-      border-radius: 50%;
+      // width: 50%; //--------------------------------------change this for tablet and desktop
 
-      transition: 0.3s all ease-in-out;
-      &:hover {
-        background: $ice;
+      justify-content: space-evenly;
+      .icon-circle {
+        flex: 0 1 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        border-radius: 50%;
+
+        transition: 0.3s all ease-in-out;
+        &:hover {
+          background: $ice;
+        }
+      }
+    }
+  }
+  form {
+    margin-top: 1rem;
+    .col {
+      display: flex;
+      // align-items: center;
+      flex-direction: column;
+      // width: 100%;
+      overflow: hidden;
+
+      .form-group {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        // width: 40%;
+
+        padding-right: 40px;
+        label {
+          font-size: 1rem;
+          color: $darkblue;
+          @include light;
+
+          width: 100%;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tell"],
+        textarea {
+          background: rgba(255, 255, 255, 0.2);
+          background: transparent;
+          border: none;
+          border-bottom: 2px solid $darkblue;
+          padding: 10px;
+          font-size: 1rem;
+          cursor: pointer;
+          resize: none;
+          @include light;
+          transition: 0.5s all ease-in-out;
+          margin-bottom: 2rem;
+          &:focus {
+            outline: none;
+            border-bottom: 2px solid salmon;
+          }
+        }
       }
     }
   }
 }
-form {
-  padding: 40px;
-  width: 100%;
-  .col {
+
+// Tablet View
+.contact {
+  @include tablet {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    overflow: hidden;
-    flex-wrap: wrap;
-    // flex: 0 1 50%;
-    // flex-basis: 50%;
-  }
-  .form-group {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 40%;
-    // flex: 0 1 100%;
-    // flex: 50%;
-    padding-right: 40px;
-    label {
-      font-size: 1rem;
-      color: $darkblue;
-      @include light;
-      //   margin-bottom: 1rem;
-      width: 100%;
-    }
-    input[type="text"],
-    input[type="email"],
-    input[type="tell"],
-    textarea {
-      background: rgba(255, 255, 255, 0.2);
-      background: transparent;
-      border: none;
-      border-bottom: 2px solid $darkblue;
-      padding: 10px;
-      font-size: 1rem;
-      cursor: pointer;
-      @include light;
-      transition: 0.5s all ease-in-out;
-      margin-bottom: 2rem;
-      &:focus {
-        outline: none;
-        border-bottom: 2px solid salmon;
-      }
-    }
-    // &:nth-child(2) {
-    //   padding-right: 0;
-    // }
-  }
-  .butns {
-    width: 100%;
-    @include light;
-    .form__title {
-      text-transform: uppercase;
-    }
-
-    input[type="radio"]:checked + label {
-      color: salmon;
-      @include bold;
-      text-transform: uppercase;
-    }
-    .textArea {
-      margin: 2rem 0;
-    }
-    .textArea__message {
-      padding-bottom: 10rem;
-    }
-    .textAreas {
-      width: 100%;
-      background: rgba(255, 255, 255, 0.2);
-      background: transparent;
-      border: none;
-      border-bottom: 2px solid $darkblue;
-      padding: 15px 10px 0 10px;
-      resize: none;
-      font-size: 1rem;
-      cursor: pointer;
-      @include light;
-      transition: 0.5s all ease-in-out;
-      margin-bottom: 2rem;
-      &:focus {
-        outline: none;
-        border-bottom: 2px solid salmon;
-      }
-    }
-  }
-  .radio {
-    display: flex;
-    justify-content: flex-start;
-    padding-top: 1rem;
-    &__content {
+    justify-content: space-between;
+    height: 40%;
+    &__info {
+      height: 30vh;
       margin-right: 2rem;
+      &-header {
+        margin: 0 0 2rem 0;
+        font-size: 1.5rem;
+      }
+      &-content {
+        font-size: 1.1rem;
+        @include light;
+        margin-bottom: 1.5rem;
+      }
     }
-    label {
-      font-size: 1.1rem;
+    form {
+      margin-top: 1rem;
     }
+  }
+}
+
+//Pro
+.contact {
+  @include pro {
+    height: 30%;
+    width: 65%;
+    &__info {
+      height: 23vh;
+    }
+  }
+}
+
+// Desktop
+
+.contact {
+  @include desktop {
+    width: 50%;
+    height: 50%;
+  }
+  &__info {
+    height: 35vh;
   }
 }

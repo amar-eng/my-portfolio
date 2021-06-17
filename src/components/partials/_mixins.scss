@@ -5,7 +5,11 @@
     @content;
   }
 }
-
+@mixin pro {
+  @media (min-width: $tablet-pro) {
+    @content;
+  }
+}
 @mixin desktop {
   @media (min-width: $desktop-breakpoint) {
     @content;

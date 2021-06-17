@@ -11,11 +11,11 @@ import Homepage from "./pages/Homepage";
 function App() {
   return (
     <Router>
-      <Homepage />
+      {/* <Homepage />
 
       <Hero />
-      <Resume />
-      <Projects />
+      <Resume /> */}
+      {/* <Projects /> */}
       <Contact />
     </Router>
   );
