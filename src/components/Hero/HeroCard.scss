@@ -8,6 +8,7 @@
   box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
     -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
   background-color: $beige;
+
   position: absolute;
   bottom: 27%;
   left: 12%;
@@ -25,6 +26,7 @@
     background-size: cover;
   }
   &__name {
+    color: red;
     text-align: center;
     text-transform: uppercase;
     padding: 0 0.4rem;
@@ -81,6 +83,7 @@
     &__title {
       text-align: center;
       @include light;
+
       text-transform: uppercase;
       font-size: 27px;
       color: $black;
