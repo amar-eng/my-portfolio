@@ -30,9 +30,7 @@ const Contact = () => {
       <div className="contact">
         <div className="contact__info">
           <div className="contact__info-header">Contact info</div>
-          <div className="contact__info-content">
-            Fill up the form and click send
-          </div>
+          <div className="contact__info-content">Feel feel to reach out!</div>
           <div className="icon-text">
             <BiPhone
               style={{
@@ -77,6 +75,7 @@ const Contact = () => {
               />
             </a>
           </div>
+          {/* <div className="mylogo"></div> */}
         </div>
 
         <form onSubmit={sendEmail}>
@@ -96,37 +95,7 @@ const Contact = () => {
               />
             </div>
           </div>
-          {/* <div className="butns">
-            <div className="form">
-              <label className="form__title">
-                What kind of service can I provide you with?
-              </label>
-              <div className="radio">
-                <div className="radio__content">
-                  <input type="radio" name="type" value="Job" id="radiojob" />
-                  <label htmlFor="radiojob">Job Opportunity</label>
-                </div>
-                <div className="radio__content">
-                  <input
-                    type="radio"
-                    name="type"
-                    value="e-commerce"
-                    id="radioecommerce"
-                  />
-                  <label htmlFor="radioecommerce">E-commerce</label>
-                </div>
-                <div className="radio__content">
-                  <input
-                    type="radio"
-                    name="type"
-                    value="Personal"
-                    id="radiopersonal"
-                  />
-                  <label htmlFor="radiopersonal">Personal</label>
-                </div>
-              </div>
-            </div>
-          </div> */}
+
           <div className="col">
             <div className="form-group">
               {/* <label className="textArea__message" id="message">

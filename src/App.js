@@ -8,15 +8,16 @@ import Resume from "./components/Resume/Resume";
 // import Navbar from "./components/Navbar";
 // import Sidebar from "./components/Sidebar";
 import Homepage from "./pages/Homepage";
+import Test from "./components/test/Test";
 function App() {
   return (
     <Router>
-      {/* <Homepage />
-
+      <Homepage />
       <Hero />
-      <Resume /> */}
-      {/* <Projects /> */}
+      <Resume />
+      <Projects />
       <Contact />
+      {/* <Test />  */}
     </Router>
   );
 }
