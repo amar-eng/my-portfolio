@@ -26,13 +26,12 @@
     background-size: cover;
   }
   &__name {
-    color: red;
     text-align: center;
     text-transform: uppercase;
     padding: 0 0.4rem;
     @include bold;
     font-size: 30px;
-    color: $black;
+    color: $darkblue;
   }
   &__title {
     text-align: center;
@@ -78,7 +77,7 @@
       text-transform: uppercase;
       @include bold;
       font-size: 34px;
-      color: $black;
+      // color: $black;
     }
     &__title {
       text-align: center;
@@ -86,7 +85,7 @@
 
       text-transform: uppercase;
       font-size: 27px;
-      color: $black;
+      // color: $black;
       // padding-top: 2rem;
     }
   }
