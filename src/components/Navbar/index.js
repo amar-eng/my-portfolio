@@ -9,6 +9,7 @@ import {
   NavMenu,
   NavLinks,
 } from "./NavbarElements";
+import Me from '../../assets/icons/logoo.png'
 const Navbar = ({ toggle }) => {
 
   const [scrollNav,setScrollNav] =useState(false)
@@ -28,7 +29,7 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">Amar</NavLogo>
+          <NavLogo to="/"><img src={Me} alt='amar.logo' style ={{width:'30%'}}/> </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -46,7 +47,7 @@ const Navbar = ({ toggle }) => {
               <NavLinks to="projects">Projects</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact">Contact Me</NavLinks>
+              <NavLinks to="contact">Contact</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
