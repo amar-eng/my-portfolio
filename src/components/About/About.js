@@ -1,7 +1,8 @@
 import React from "react";
 import Timeline from "../Timeline/Timeline";
+import Hero from '../Hero/Hero'
 const About = () => {
-  return <div></div>;
+  return <Hero/>;
 };
 
 export default About;

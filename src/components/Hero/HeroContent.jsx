@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import { init } from "ityped";
 import pdf from "../../assets/pdf/Amar.pdf";
+import "../Contact/Contact.scss";
 import Button from "../Button/Button";
 import "./HeroContent.scss";
 import "../Button/Button.scss";
 import HeroIcons from "./HeroIcons";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 const HeroContent = () => {
   const textRef = useRef();
   useEffect(() => {
@@ -59,7 +61,31 @@ const HeroContent = () => {
         programming Javascript applications or finding solutions to real world
         problems.
       </p>
-      <HeroIcons />
+      {/* <HeroIcons /> */}
+      <div className="socials">
+            <a className="icon-circle">
+              <AiFillGithub
+                style={{
+                  color: "#4078c0",
+                  fontSize: "30px",
+                  cursor: "pointer",
+                }}
+                onClick={() => window.open(`https://github.com/amar-eng`)}
+              />
+            </a>
+            <a className="icon-circle">
+              <AiFillLinkedin
+                style={{
+                  color: " #0e76a8",
+                  fontSize: "30px",
+                  cursor: "pointer",
+                }}
+                onClick={() =>
+                  window.open(`https://www.linkedin.com/in/amar-mohamud/`)
+                }
+              />
+            </a>
+          </div>
     </div>
   );
 };
