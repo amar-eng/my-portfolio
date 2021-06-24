@@ -2,9 +2,100 @@
 @import "../partials/mixins";
 @import "../partials/variables";
 
-.card {
-  // Mobile View
+// .card {
+//   // Mobile View
 
+//   box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+//     -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+//   background-color: $beige;
+
+//   position: absolute;
+//   bottom: 27%;
+//   left: 12%;
+//   height: 60vh;
+//   width: 80%;
+//   &__image {
+//     width: 69%;
+//     height: 52%;
+//     margin: 1rem 3rem;
+
+//     border-radius: 50%; /*don't forget prefixes*/
+//     background-image: url("../../assets/pics/me.jpg");
+//     background-position: center center;
+
+//     background-size: cover;
+//   }
+//   &__name {
+//     text-align: center;
+//     text-transform: uppercase;
+//     padding: 0 0.4rem;
+//     @include bold;
+//     font-size: 30px;
+//     color: $darkblue;
+//   }
+//   &__title {
+//     text-align: center;
+//     @include light;
+//     text-transform: uppercase;
+//     font-size: 25px;
+//     color: $darkblue;
+//   }
+
+//   // Tablet view
+
+//   @include tablet {
+//     position: absolute;
+//     bottom: 32%;
+//     // left: 25%;
+//     height: 55vh;
+//     width: 80%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     &__image {
+//       width: 35%;
+//       height: 45%;
+//       margin: 1rem 3rem;
+//     }
+//   }
+
+//   // Desktop view
+//   @include desktop {
+//     bottom: 10%;
+//     opacity: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     width: 25%;
+//     height: 70vh;
+//     &__image {
+//       width: 65%;
+//       height: 52%;
+//       margin: 1rem 2.9rem;
+//     }
+//     &__name {
+//       text-align: center;
+//       text-transform: uppercase;
+//       @include bold;
+//       font-size: 34px;
+//       // color: $black;
+//     }
+//     &__title {
+//       text-align: center;
+//       @include light;
+
+//       text-transform: uppercase;
+//       font-size: 27px;
+//       // color: $black;
+//       // padding-top: 2rem;
+//     }
+//   }
+  
+// }
+
+// ----------------------------------//
+
+
+.card{
   box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
     -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
   background-color: $beige;
@@ -14,36 +105,7 @@
   left: 12%;
   height: 60vh;
   width: 80%;
-  &__image {
-    width: 69%;
-    height: 52%;
-    margin: 1rem 3rem;
-
-    border-radius: 50%; /*don't forget prefixes*/
-    background-image: url("../../assets/pics/me.jpg");
-    background-position: center center;
-
-    background-size: cover;
-  }
-  &__name {
-    text-align: center;
-    text-transform: uppercase;
-    padding: 0 0.4rem;
-    @include bold;
-    font-size: 30px;
-    color: $darkblue;
-  }
-  &__title {
-    text-align: center;
-    @include light;
-    text-transform: uppercase;
-    font-size: 25px;
-    color: $darkblue;
-  }
-
-  // Tablet view
-
-  @include tablet {
+   @include tablet {
     position: absolute;
     bottom: 32%;
     // left: 25%;
@@ -52,14 +114,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    &__image {
-      width: 35%;
-      height: 45%;
-      margin: 1rem 3rem;
-    }
   }
-
-  // Desktop view
   @include desktop {
     bottom: 10%;
     opacity: 100%;
@@ -67,27 +122,60 @@
     flex-direction: column;
     width: 25%;
     height: 70vh;
-    &__image {
+  }
+
+
+  &__image {
+    width: 69%;
+    height: 52%;
+    margin: 1rem 3rem;
+
+    border-radius: 50%; /*don't forget prefixes*/
+    background-image: url("../../assets/pics/me.jpg");
+    background-position: center center;
+    background-size: cover;
+
+
+    @include tablet{
+      width: 35%;
+      height: 45%;
+    }
+    @include desktop{
       width: 65%;
       height: 52%;
       margin: 1rem 2.9rem;
     }
-    &__name {
-      text-align: center;
-      text-transform: uppercase;
-      @include bold;
-      font-size: 34px;
-      // color: $black;
-    }
-    &__title {
-      text-align: center;
-      @include light;
+  }
 
-      text-transform: uppercase;
-      font-size: 27px;
-      // color: $black;
-      // padding-top: 2rem;
+
+  &__name {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 0.4rem;
+    @include bold;
+    font-size: 30px;
+    color: $darkblue;
+    
+    @include tablet{
+      font-size: 32px;  
+    }
+    @include desktop{
+      font-size: 34px;
     }
   }
-  
+
+
+  &__title {
+    text-align: center;
+    @include light;
+    text-transform: uppercase;
+    font-size: 25px;
+    color: $darkblue;
+    @include desktop{
+      font-size: 27px;
+    }
+  }
+
+
+
 }
